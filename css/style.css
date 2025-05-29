@@ -1,0 +1,8 @@
+@charset "UTF-8";
+/* Variabler vi kan kalde på, i scss'en */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "acumin-pro", sans-serif;
+}/*# sourceMappingURL=style.css.map */

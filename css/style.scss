@@ -1,0 +1,12 @@
+/* Variabler vi kan kalde på, i scss'en */
+$primary-color: #D1931C;
+$secondary-color: #041E42;
+$bg-color: #F5F2EF;
+$text-color: #000000;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "acumin-pro", sans-serif;
+}
