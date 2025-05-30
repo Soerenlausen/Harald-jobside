@@ -10,3 +10,62 @@ $text-color: #000000;
     box-sizing: border-box;
     font-family: "acumin-pro", sans-serif;
 }
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 80svh;
+    color: $bg-color;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/heroimg.jpg);
+    background-size: auto 100vw;
+    background-repeat: no-repeat;
+    padding: 50px;
+    
+
+    h1{
+        font-size: 3em;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    p{
+        font-size: 1.2em;
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    a{
+        padding: 10px 30px;
+        border-radius: 1.5rem;
+        background-color: $primary-color;
+        text-decoration: none;
+        color: $bg-color;
+        margin-bottom: 50px;
+    }
+}
+
+@media  screen and (max-width: 768px){
+    .hero{
+        background-size: auto 100%;
+        padding: 25px;
+
+        h1{
+            font-size: 2em;
+            
+        }
+
+        p{
+            font-size: 1em;
+            
+        }
+
+        a{
+            
+        }
+    }
+}
