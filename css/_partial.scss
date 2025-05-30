@@ -1,0 +1,16 @@
+/* Variabler vi kan kalde på, i scss'en */
+$primary-color: #D1931C;
+$secondary-color: #041E42;
+$bg-color: #F5F2EF;
+$text-color: #000000;
+$border-radius: 1.5rem;
+
+/* mixin til gentagene stykker styling */
+@mixin a-styling{
+    height: fit-content;
+    width: fit-content;
+    background-color: $primary-color;
+    text-decoration: none;
+    color: $bg-color;
+    border-radius: $border-radius;
+}
