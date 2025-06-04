@@ -87,9 +87,11 @@
   text-decoration: none;
   color: #F5F2EF;
   border-radius: 1.5rem;
-  padding: 15px 40px;
-  width: 250px;
+  padding: 15px 30px;
+  width: 325px;
   text-align: center;
+  font-weight: 600;
+  font-size: 1.1em;
 }
 .content img {
   grid-area: img;
@@ -194,7 +196,7 @@ video {
     font-size: 1.8em;
     justify-self: center;
   }
-  .content p {
+  .content p, .content a {
     font-size: 1em;
   }
   .content a {
