@@ -1,11 +1,18 @@
 @charset "UTF-8";
 /* Variabler vi kan kalde på, i scss'en */
 /* mixin til gentagene stykker styling */
+/* importerer variabler og mixins fra partial.scss */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "acumin-pro", sans-serif;
+}
+
+a:hover { /* hover effekt på alle anchors */
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  transform: scale(1.03);
+  transition: 0.5s;
 }
 
 /* scss for index.html */
@@ -36,6 +43,7 @@
   margin-bottom: 30px;
 }
 .hero a {
+  /* Styling til alle anchors på siderne */
   height: -moz-fit-content;
   height: fit-content;
   width: -moz-fit-content;
@@ -44,6 +52,8 @@
   text-decoration: none;
   color: #F5F2EF;
   border-radius: 1.5rem;
+  font-weight: 600;
+  transition: 0.5s;
   margin-bottom: 50px;
   padding: 12px 30px;
 }
@@ -63,7 +73,7 @@
   gap: 100px;
   row-gap: 30px;
 }
-.content section:nth-of-type(even) {
+.content section:nth-of-type(even) { /* skifter rækkefølge på elementerne i grid'en */
   grid-template-columns: 3fr 2fr;
   grid-template-areas: "img h2" "img p" "img a";
 }
@@ -79,6 +89,7 @@
 }
 .content a {
   grid-area: a;
+  /* Styling til alle anchors på siderne */
   height: -moz-fit-content;
   height: fit-content;
   width: -moz-fit-content;
@@ -87,10 +98,11 @@
   text-decoration: none;
   color: #F5F2EF;
   border-radius: 1.5rem;
+  font-weight: 600;
+  transition: 0.5s;
   padding: 15px 30px;
   width: 325px;
   text-align: center;
-  font-weight: 600;
   font-size: 1.1em;
 }
 .content img {
@@ -102,7 +114,7 @@
      object-fit: cover;
 }
 
-/* scss for arbejdsmiljoe.html */
+/* scss for arbejdsmiljoe.html/faellesskab.html */
 video {
   width: 100%;
   height: 80svh;
@@ -111,7 +123,7 @@ video {
   background-color: #000000;
 }
 
-.arbejdsmiljoe {
+.arbejdsmiljoe { /* tilføjer små ændrer til grid scss'en fra index.html, så den passer til arbejdsmiljø/fællesskab */
   grid-template-rows: 1fr 1fr;
   padding-bottom: 20px;
 }
@@ -123,7 +135,7 @@ video {
   grid-template-areas: "img h2" "img p";
 }
 
-.bottom-content {
+.bottom-content { /* hero i bunden af arbejdsmiljø/fællesskab siden */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -149,6 +161,7 @@ video {
   margin-bottom: 30px;
 }
 .bottom-content div a {
+  /* Styling til alle anchors på siderne */
   height: -moz-fit-content;
   height: fit-content;
   width: -moz-fit-content;
@@ -157,6 +170,8 @@ video {
   text-decoration: none;
   color: #F5F2EF;
   border-radius: 1.5rem;
+  font-weight: 600;
+  transition: 0.5s;
   padding: 12px 30px;
   width: fit-content;
   text-align: center;
@@ -203,7 +218,7 @@ video {
     justify-self: center;
     text-align: center;
   }
-  /* scss for arbejdsmiljoe.html */
+  /* scss for arbejdsmiljoe.html/faellesskab.html */
   video {
     height: 100%;
   }

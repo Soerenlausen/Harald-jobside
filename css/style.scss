@@ -1,10 +1,16 @@
-@use 'partial';
+@use 'partial'; /* importerer variabler og mixins fra partial.scss */
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "acumin-pro", sans-serif;
+}
+
+a:hover{ /* hover effekt på alle anchors */
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    transform: scale(1.03);
+    transition: 0.5s;
 }
 
 /* scss for index.html */
@@ -63,7 +69,7 @@
         row-gap: 30px;
     }
 
-    section:nth-of-type(even){
+    section:nth-of-type(even){ /* skifter rækkefølge på elementerne i grid'en */
         grid-template-columns: 3fr 2fr;
         grid-template-areas: 
         'img h2'
@@ -89,7 +95,6 @@
         padding: 15px 30px;
         width: 325px;
         text-align: center;
-        font-weight: 600;
         font-size: 1.1em;
     }
 
@@ -103,7 +108,7 @@
 
 }
 
-/* scss for arbejdsmiljoe.html */
+/* scss for arbejdsmiljoe.html/faellesskab.html */
 video{
     width: 100%;
     height: 80svh;
@@ -111,7 +116,7 @@ video{
     background-color: partial.$text-color;
 }
 
-.arbejdsmiljoe{
+.arbejdsmiljoe{ /* tilføjer små ændrer til grid scss'en fra index.html, så den passer til arbejdsmiljø/fællesskab */
         grid-template-rows: 1fr 1fr;
         padding-bottom: 20px;
 
@@ -127,7 +132,7 @@ video{
             'img p'
         }
     }
-.bottom-content{
+.bottom-content{ /* hero i bunden af arbejdsmiljø/fællesskab siden */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -216,7 +221,7 @@ video{
         }
     }
 
-    /* scss for arbejdsmiljoe.html */
+    /* scss for arbejdsmiljoe.html/faellesskab.html */
     video{
         height: 100%;
     }

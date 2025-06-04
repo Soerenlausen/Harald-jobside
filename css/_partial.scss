@@ -6,11 +6,13 @@ $text-color: #000000;
 $border-radius: 1.5rem;
 
 /* mixin til gentagene stykker styling */
-@mixin a-styling{
+@mixin a-styling{ /* Styling til alle anchors på siderne */
     height: fit-content;
     width: fit-content;
     background-color: $primary-color;
     text-decoration: none;
     color: $bg-color;
     border-radius: $border-radius;
+    font-weight: 600;
+    transition: 0.5s;
 }
