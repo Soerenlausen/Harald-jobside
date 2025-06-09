@@ -135,6 +135,7 @@ a:hover { /* hover effekt på alle anchors */
 .banner section p {
   font-size: 1em;
   text-align: left;
+  font-style: normal;
 }
 .banner section a {
   margin-top: 20px;
