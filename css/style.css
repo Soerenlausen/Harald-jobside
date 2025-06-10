@@ -25,7 +25,7 @@ a:hover { /* hover effekt på alle anchors */
   height: 80svh;
   color: #F5F2EF;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/heroimg.jpg);
-  background-size: auto 100vw;
+  background-size: cover;
   background-repeat: no-repeat;
   padding: 50px;
 }
