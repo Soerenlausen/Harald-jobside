@@ -7,7 +7,99 @@
     font-family: "acumin-pro", sans-serif;
 }
 
-a:hover{ /* hover effekt på alle anchors */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  height: partial.$header-height;
+  width: 100vw;
+  padding: 0 5%;
+  background-color: white;
+
+  img {
+    width: 200px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    ul {
+      display: flex;
+      list-style: none;
+      align-items: flex-end;
+      justify-content: center;
+      height: 75px;
+      width: 100%;
+      gap: 30px;
+      border-top: 1px solid partial.$text-color;
+
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+
+        &:last-child a {
+          color: partial.$primary-color;
+          font-size: 1.1rem;
+        }
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: partial.$text-color;
+
+      &:hover {
+        color: partial.$primary-color;
+        transition: 0.1s;
+      }
+    }
+  }
+
+  #menu {
+    display: none;
+    font-size: 2.3rem;
+  }
+
+  #mobile-nav {
+    display: none;
+    position: fixed;
+    top: 100px;
+    right: -100vw;
+    height: calc(100vh - 100px);
+    width: 100vw;
+    background-color: white;
+    transition: 0.2s;
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 100%;
+      height: 80%;
+
+      li {
+        &:last-child a {
+          color: partial.$primary-color;
+        }
+
+        a {
+          text-decoration: none;
+          color: partial.$text-color;
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+}
+
+main a:hover{ /* hover effekt på alle anchors inde i <main> */
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
     transform: scale(1.03);
     transition: 0.5s;
@@ -200,6 +292,93 @@ a:hover{ /* hover effekt på alle anchors */
     }
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: partial.$secondary-color;
+  color: partial.$bg-color;
+
+  & > section:nth-child(1) {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5%;
+    width: partial.$section-width;
+    border-bottom: 1px solid grey;
+
+    article {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      height: 150px;
+    }
+
+    a {
+      text-decoration: none;
+      color: partial.$bg-color;
+      opacity: 0.4;
+
+      &:hover {
+        opacity: 1;
+        transition: partial.$transition-duration;
+      }
+    }
+
+    img {
+      width: 125px;
+    }
+  }
+
+  & > section:nth-child(2) {
+    display: flex;
+    width: partial.$section-width;
+    justify-content: space-between;
+    align-items: center;
+
+    div {
+      display: flex;
+      gap: 20px;
+
+      i {
+        font-size: 2.5rem;
+      }
+
+      a {
+        text-decoration: none;
+        color: partial.$bg-color;
+      }
+    }
+  }
+}
+
+@media  screen and (max-width: 1190px) {
+
+header {
+  height: 100px;
+
+  img {
+    width: 105px;
+  }
+
+  nav {
+    ul {
+      display: none; 
+    }
+
+    #menu {
+      display: flex; 
+    }
+  }
+
+  #mobile-nav {
+    display: flex;
+    right: -100vw; 
+  }
+}
+
+}
+
 /* scss der gør sider responsiv til mobil*/
 @media  screen and (max-width: 768px){
     .hero{
@@ -250,6 +429,7 @@ a:hover{ /* hover effekt på alle anchors */
             justify-self: center;
             text-align: center;
         }
+        
     }
 
     /* scss for arbejdsmiljoe.html/faellesskab.html */
@@ -300,4 +480,21 @@ a:hover{ /* hover effekt på alle anchors */
 
         }
     }
+
+            footer {
+    section {
+    flex-direction: column;
+    padding: 10% 0;
+    &:nth-child(1) {
+      align-items: flex-start;
+    }
+    &:nth-child(2) {
+      div {
+        i {
+          font-size: 4rem;
+        }
+      }
+    }
+  }
+}
 }

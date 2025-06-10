@@ -4,6 +4,9 @@ $secondary-color: #041E42;
 $bg-color: #F5F2EF;
 $text-color: #000000;
 $border-radius: 1.5rem;
+$header-height: 140px;
+$transition-duration: 0.2s;
+$section-width: 85vw;
 
 /* mixin til gentagene stykker styling */
 @mixin a-styling{ /* Styling til alle anchors på siderne */
