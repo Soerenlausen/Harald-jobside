@@ -67,7 +67,7 @@ a:hover { /* hover effekt på alle anchors */
 .content section {
   display: grid;
   grid-template-columns: 2fr 3fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr auto 1fr;
   grid-template-areas: "h2 img" "p img" "a img";
   padding: 100px;
   gap: 100px;
@@ -109,36 +109,43 @@ a:hover { /* hover effekt på alle anchors */
   grid-area: img;
   border-radius: 1.5rem;
   width: 100%;
-  height: 100%;
+  max-height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  align-self: center;
 }
 
 /* scss for arbejdsmiljoe.html/faellesskab.html */
 .banner {
-  background-image: url(../img/Banner-ht.png);
-  background-size: cover;
-  background-position: top right;
+  background-image: url(../img/tandlæge2.jpg);
   align-items: end;
-  padding: 30px;
+  padding: 0;
 }
 .banner section {
   display: flex;
   flex-direction: column;
-  width: 300px;
-  height: 250px;
+  width: 30vw;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #041E42;
+  padding: 30px 50px;
+  border-radius: 1.5rem;
+  margin: 30px;
 }
 .banner section h1 {
-  font-size: 1.5em;
+  font-size: 2em;
   text-align: left;
 }
 .banner section p {
-  font-size: 1em;
+  font-size: 1.2em;
   text-align: left;
   font-style: normal;
 }
 .banner section a {
-  margin-top: 20px;
+  margin-bottom: 0;
+  margin-top: 30px;
+  justify-self: end;
 }
 
 .arbejdsmiljoe { /* tilføjer små ændrer til grid scss'en fra index.html, så den passer til arbejdsmiljø/fællesskab */
@@ -237,8 +244,24 @@ a:hover { /* hover effekt på alle anchors */
     text-align: center;
   }
   /* scss for arbejdsmiljoe.html/faellesskab.html */
-  video {
-    height: 100%;
+  .banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/tandlæge2.jpg);
+    background-size: auto 100%;
+    background-position: center;
+    padding: 0;
+  }
+  .banner section {
+    width: 100vw;
+    background-color: transparent;
+    margin: 0;
+  }
+  .banner section h1 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  .banner section p {
+    font-size: 1em;
+    text-align: center;
   }
   .bottom-content {
     padding: 0;
