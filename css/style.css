@@ -89,7 +89,7 @@ header #mobile-nav ul li a {
 }
 
 main {
-  margin-top: 100px;
+  margin-top: 140px;
 }
 main a:hover { /* hover effekt på alle anchors inde i <main> */
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
