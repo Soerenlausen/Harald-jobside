@@ -16,6 +16,7 @@ header {
   width: 100vw;
   padding: 0 5%;
   background-color: white;
+  top: 0;
 
   img {
     width: 200px;
@@ -99,10 +100,14 @@ header {
   }
 }
 
-main a:hover{ /* hover effekt på alle anchors inde i <main> */
+main {
+  margin-top: 100px;
+
+  a:hover{ /* hover effekt på alle anchors inde i <main> */
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
     transform: scale(1.03);
     transition: 0.5s;
+  }
 }
 
 /* scss for index.html */
