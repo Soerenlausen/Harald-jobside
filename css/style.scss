@@ -207,6 +207,13 @@ main {
 }
 
 /* scss for arbejdsmiljoe.html/faellesskab.html */
+video{
+    width: 100%;
+    height: 80svh;
+    object-fit: contain;
+    background-color: partial.$secondary-color;
+}
+
 .banner{
     background-image: url(../img/tandlæge2.jpg);
     background-repeat: no-repeat;
@@ -437,7 +444,15 @@ header {
         
     }
 
+    main{
+        margin-top: 100px;
+    }
+
     /* scss for arbejdsmiljoe.html/faellesskab.html */
+    video{
+        height: 100%;
+    }
+
     .banner{
         background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/tandlæge2.jpg);
         background-size: auto 100%;
