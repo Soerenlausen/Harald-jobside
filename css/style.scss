@@ -176,7 +176,7 @@ main {
 
     h2{
         grid-area: h2;
-        font-size: 3em;
+        font-size: 2em;
         align-self: end;
     }
 
@@ -224,7 +224,8 @@ video{
         display: flex;
         flex-direction: column;
         width: 30vw;
-        height: 100%;
+        height: fit-content;
+        max-height: 100%;
         align-items: center;
         justify-content: center;
         background-color: partial.$secondary-color;
@@ -233,7 +234,7 @@ video{
         margin: 30px;
 
         h1{
-        font-size: 2em;
+        font-size: 2.1em;
         text-align: left;
         }
 
@@ -429,7 +430,7 @@ header {
         }
 
         h2{
-            font-size: 1.8em;
+            font-size: 1.5em;
             justify-self: center;
         }
 
